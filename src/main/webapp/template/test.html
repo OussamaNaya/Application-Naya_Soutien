@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours Bac Math</title>
+</head>
+
+<body>
+
+    <h1>Cours Bac Math</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prix</th>
+                <th>Ajouter</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" id="nom1"></td>
+                <td><input type="text" id="prix1"></td>
+                <td><button onclick="ajouterCours(1)">Ajouter</button></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="nom2"></td>
+                <td><input type="text" id="prix2"></td>
+                <td><button onclick="ajouterCours(2)">Ajouter</button></td>
+            </tr>
+            <!-- Ajoutez autant de lignes que nécessaire -->
+
+        </tbody>
+    </table>
+
+    <script>
+        function ajouterCours(numeroCours) {
+            var nom = document.getElementById('nom' + numeroCours).value;
+            var prix = document.getElementById('prix' + numeroCours).value;
+
+            // Vous pouvez utiliser ces données comme vous le souhaitez, par exemple, les ajouter à une liste
+            console.log('Nom du cours : ' + nom);
+            console.log('Prix du cours : ' + prix);
